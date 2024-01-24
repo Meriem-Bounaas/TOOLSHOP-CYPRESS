@@ -1,0 +1,6 @@
+- regitration and login
+- logout
+- search
+- filter
+- slider price
+- checkout
