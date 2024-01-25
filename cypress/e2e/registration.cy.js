@@ -2,24 +2,39 @@ import landingPage from "../pages/landingPage"
 import loginPage from "../pages/loginPage"
 import registrationPage from "../pages/registrationPage"
 
-describe('authentification', () => {
+describe('Registration in tool shop', () => {
 
-  before(() => {
+  beforeEach(() => {
     cy.visit('https://practicesoftwaretesting.com/')
   })
 
-  it('registration', () => {
-    let landingObj = new landingPage()
+  let landingObj = new landingPage()
+  let loginObj = new loginPage()
+  let registrationObj = new registrationPage()
+
+  it('registration ok', () => {
     landingObj.verifyPage()
     landingObj.goToSignInPage()
 
-    let loginObj = new loginPage()
     loginObj.verifyPage()
     loginObj.goToRegistrationPage()
 
-    let registrationObj = new registrationPage()
     registrationObj.verifyPage()
-    registrationObj.fillForm()
+    registrationObj.fillFormOk()
+    loginObj.verifyPage()
+    
+  })
+
+  it('registration ko', () => {
+    landingObj.verifyPage()
+    landingObj.goToSignInPage()
+
+    loginObj.verifyPage()
+    loginObj.goToRegistrationPage()
+
+    registrationObj.verifyPage()
+    registrationObj.fillFormKo()
+
   })
 
 })

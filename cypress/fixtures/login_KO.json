@@ -1,0 +1,41 @@
+[
+  {
+    "firstname": "tomas",
+    "lastname": "mercer",
+    "dateBirthday": "1998-01-01",
+    "adress": "123 Maple Street",
+    "postcode": "75001",
+    "city": "Paris",
+    "stat": "Île-de-France,",
+    "phone": "0723456789",
+    "email": "tomas",
+    "password": "tomas123",
+    "required": "email"
+  },
+  {
+    "firstname": "tomas",
+    "lastname": "mercer",
+    "dateBirthday": "1998-01-01",
+    "adress": "123 Maple Street",
+    "postcode": "75001",
+    "city": "Paris",
+    "stat": "Île-de-France,",
+    "phone": "0723456789",
+    "email": "tomas@tomass.com",
+    "password": "tomas",
+    "required": "password"
+  },
+  {
+    "firstname": "tomas",
+    "lastname": "mercer",
+    "dateBirthday": "1998-01-01",
+    "adress": "123 Maple Street",
+    "postcode": "75001",
+    "city": "Paris",
+    "stat": "Île-de-France,",
+    "phone": "0723456789",
+    "email": "",
+    "password": "",
+    "required": "password"
+  }
+]
