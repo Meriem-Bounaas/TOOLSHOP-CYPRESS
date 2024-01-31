@@ -22,7 +22,6 @@ describe('Registration in tool shop', () => {
     registrationObj.verifyPage()
     registrationObj.fillFormOk()
     loginObj.verifyPage()
-    
   })
 
   it('registration ko', () => {

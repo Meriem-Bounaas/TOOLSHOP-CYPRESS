@@ -3,7 +3,8 @@ class myAccountPage{
     elements = {
         myAccountText : () => cy.get('.container h1 '),
         userMenu : () => cy.get('#user-menu'),
-        signOut : () => cy.xpath('//div[@id="navbarSupportedContent"]/ul/li[4]/ul/li[7]')
+        signOut : () => cy.xpath('//div[@id="navbarSupportedContent"]/ul/li[4]/ul/li[7]'),
+        homeBtn : () => cy.xpath('//li[@class="nav-item"]/a[text()="Home"]')
     }
 
     verifyPage(){
@@ -14,6 +15,10 @@ class myAccountPage{
     logout(){
         this.elements.userMenu().click() 
         this.elements.signOut().click() 
+    }
+
+    goToHome(){
+        this.elements.homeBtn().click()
     }
 }
 

@@ -6,20 +6,23 @@ Created by Roy De Kleijn
 1. regitration 
 2. login
 3. logout
-4. add items
+4. add item
 5. search item
 6. filter items
 7. checkout
 
 ### Scenarios :
-
+1. registration and login 
+2. search items and add it  
+3. filter items and add second item 
+4. checkout
+5. logout
 
 ### Report HTML:
 
 
 ### Technology used:
 1. Cypress
-
 
 ### Tests execution:
 1. Run the tests
