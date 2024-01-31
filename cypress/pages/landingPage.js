@@ -24,12 +24,20 @@ class landingPage {
         this.elements.searchInput().type(item_name+'{enter}')
     }
 
-    verifyExistanceItem(item_name){
-        cy.wait(2000)
+    verifyExistanceItem(item_name) {
+        cy.wait(2000);
+        const normalizedItemName = item_name.toLowerCase(); // Normaliser la casse de item_name
+    
         cy.xpath("//div[@class='card-body']/h5").each(card => {
-            cy.wrap(card).should('contain', item_name);
-    });
+            cy.wrap(card).invoke('text').then(text => {
+                const normalizedText = text.toLowerCase(); // Normaliser la casse du texte de l'élément
+                expect(normalizedText.includes(normalizedItemName)).to.be.true;
+            });
+        });
+    }
 
+    filterItem(item_name){
+        cy.xpath(`//label[text()='${item_name}']/input`).check()
     }
 }
 
