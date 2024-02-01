@@ -4,12 +4,15 @@ import myAccountPage from "../pages/myaccountPage"
 
 describe('Search for item', () => {
 
+    before(() => {
+        cy.visit('https://practicesoftwaretesting.com/')
+    })
+
     let landingObj = new landingPage()
     let loginObj = new loginPage()
     let myAccountObj = new myAccountPage()
     
     it('search ok', () => {
-        cy.visit('https://practicesoftwaretesting.com/')
         landingObj.verifyPage()
         landingObj.goToSignInPage()
 

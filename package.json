@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "creditcard-generator": "^0.0.7",
     "init": "^0.1.2"
   },
   "devDependencies": {
