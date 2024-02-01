@@ -1,25 +1,26 @@
-## About TOOLSHOP :
-TOOLSHOP is a software testing application,  
-Created by Roy De Kleijn
+## About TOOLSHOP:
+is a software testing application developed by Roy De Kleijn.
 
-### Test Cases:
-1. regitration 
-2. login
-3. logout
-4. add item
-5. search item
-6. filter items
-7. checkout
+## Test Cases:
 
-### Scenarios :
-1. registration and login 
-2. search items and add it  
-3. filter items and add second item 
-4. checkout
-5. logout
+1. **Registration**
+2. **Login**
+3. **Logout**
+4. **Add Item**
+5. **Search Item**
+6. **Filter Items**
+7. **Checkout**
+
+## Scenarios:
+
+1. **Registration and Login**
+2. **Search for item and add it to the cart**
+3. **Filter items and add a second item**
+4. **Checkout**
+5. **Logout**
 
 ### Report HTML:
-
+<img src="./cypress/media/ReportHTML.png">
 
 ### Technology used:
 1. Cypress
