@@ -21,17 +21,22 @@ is a software testing application developed by Roy De Kleijn.
 
 ### Report HTML:
 <img src="./cypress/media/ReportHTML.png">
+<br></br>
+<img src="./cypress/videos/HTMLReport.gif" alt="Watch my demo video">
 
 ### Technology used:
 1. Cypress
 
 ### Tests execution:
 1. Run the tests
-    npx cypress open
-    npx cypress run
+
+        npx cypress open
+        npx cypress run
 
 2. Run only one test
-    npx cypress run --spec test-file
+
+        npx cypress run --spec test-file
 
 3. Specify the browser to use
-    npx cypress run --browser chrome
+
+        npx cypress run --browser chrome

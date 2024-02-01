@@ -25,12 +25,12 @@ class landingPage {
     }
 
     verifyExistanceItem(item_name) {
-        cy.wait(2000);
-        const normalizedItemName = item_name.toLowerCase(); // Normaliser la casse de item_name
+        cy.wait(1000);
+        const normalizedItemName = item_name.toLowerCase(); 
     
         cy.xpath("//div[@class='card-body']/h5").each(card => {
             cy.wrap(card).invoke('text').then(text => {
-                const normalizedText = text.toLowerCase(); // Normaliser la casse du texte de l'élément
+                const normalizedText = text.toLowerCase(); 
                 expect(normalizedText.includes(normalizedItemName)).to.be.true;
             });
         });
